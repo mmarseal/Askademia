@@ -8,6 +8,8 @@ A modern academic question-and-answer platform built with  **Next.js 14**, **Cle
 ![Prisma](https://img.shields.io/badge/Prisma-ORM-2d3748?logo=prisma)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript)
 
+![Status](https://img.shields.io/badge/project-live-brightgreen)  
+🔗 **Live Demo:** [http://dbs.free.nf/admin.php](https://askademia-chi.vercel.app)
 ---
 
 ## ✨ Features
