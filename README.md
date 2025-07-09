@@ -42,31 +42,32 @@ cd Askademia
 
 2. Install dependencies
 npm install
-# or
+or
 yarn install
-# or
+or
 pnpm install
-# or
+or
 bun install
 
 3. Setup your .env file with:
-# - CLERK keys
-# - DATABASE_URL
-# - UPLOADTHING_TOKEN
+- CLERK keys
+- DATABASE_URL
+- UPLOADTHING_TOKEN
 
 npx prisma generate
 npm run dev
 
 4. Run the development server:
 npm run dev
-# or
+or
 yarn dev
-# or
+or
 pnpm dev
-# or
+or
 bun dev
 
 5. Open http://localhost:3000 in your browser
 
 📸 Screenshots
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/7332c226-a5e7-4ada-af0f-61742a58a30f" />
 
