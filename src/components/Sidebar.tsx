@@ -43,12 +43,12 @@ async function Sidebar() {
               <div className="flex justify-between">
                 <div>
                   <p className="font-medium">{user._count.following}</p>
-                  <p className="text-xs text-muted-foreground">Following</p>
+                  <p className="text-xs text-muted-foreground">Mengikuti</p>
                 </div>
                 <Separator orientation="vertical" />
                 <div>
                   <p className="font-medium">{user._count.followers}</p>
-                  <p className="text-xs text-muted-foreground">Followers</p>
+                  <p className="text-xs text-muted-foreground">Pengikut</p>
                 </div>
               </div>
               <Separator className="my-4" />
@@ -57,7 +57,7 @@ async function Sidebar() {
             <div className="w-full space-y-2 text-sm">
               <div className="flex items-center text-muted-foreground">
                 <MapPinIcon className="w-4 h-4 mr-2" />
-                {user.location || "No location"}
+                {user.location || "Tidak ada situs web"}
               </div>
               <div className="flex items-center text-muted-foreground">
                 <LinkIcon className="w-4 h-4 mr-2 shrink-0" />
@@ -70,7 +70,7 @@ async function Sidebar() {
                     {user.website}
                   </a>
                 ) : (
-                  "No website"
+                  "Tidak ada situs web"
                 )}
               </div>
             </div>
@@ -88,21 +88,21 @@ const UnAuthenticatedSidebar = () => (
     <Card>
       <CardHeader>
         <CardTitle className="text-center text-xl font-semibold">
-          Welcome Back!
+          Selamat Datang Kembali!
         </CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-center text-muted-foreground mb-4">
-          Login to access your profile and connect with others.
+          Masuk untuk mengakses profil Anda dan terhubung dengan orang lain.
         </p>
         <SignInButton mode="modal">
           <Button className="w-full" variant="outline">
-            Login
+            Masuk
           </Button>
         </SignInButton>
         <SignUpButton mode="modal">
           <Button className="w-full mt-2" variant="default">
-            Sign Up
+            Daftar
           </Button>
         </SignUpButton>
       </CardContent>

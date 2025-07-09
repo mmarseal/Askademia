@@ -225,7 +225,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
                   </Avatar>
                   <div className="flex-1">
                     <Textarea
-                      placeholder="Write a comment..."
+                      placeholder="Tulis komentar..."
                       value={newComment}
                       onChange={(e) => setNewComment(e.target.value)}
                       className="min-h-[80px] resize-none"

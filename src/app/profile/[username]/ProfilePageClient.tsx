@@ -121,7 +121,7 @@ function ProfilePageClient({
                         {user._count.following.toLocaleString()}
                       </div>
                       <div className="text-sm text-muted-foreground">
-                        Following
+                        Mengikuti
                       </div>
                     </div>
                     <Separator orientation="vertical" />
@@ -130,7 +130,7 @@ function ProfilePageClient({
                         {user._count.followers.toLocaleString()}
                       </div>
                       <div className="text-sm text-muted-foreground">
-                        Followers
+                        Pengikut
                       </div>
                     </div>
                     <Separator orientation="vertical" />
@@ -138,7 +138,9 @@ function ProfilePageClient({
                       <div className="font-semibold">
                         {user._count.posts.toLocaleString()}
                       </div>
-                      <div className="text-sm text-muted-foreground">Posts</div>
+                      <div className="text-sm text-muted-foreground">
+                        Postingan
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -146,7 +148,7 @@ function ProfilePageClient({
                 {/* "FOLLOW & EDIT PROFILE" BUTTONS */}
                 {!currentUser ? (
                   <SignInButton mode="modal">
-                    <Button className="w-full mt-4">Follow</Button>
+                    <Button className="w-full mt-4">Ikuti</Button>
                   </SignInButton>
                 ) : isOwnProfile ? (
                   <Button
@@ -154,7 +156,7 @@ function ProfilePageClient({
                     onClick={() => setShowEditDialog(true)}
                   >
                     <EditIcon className="size-4 mr-2" />
-                    Edit Profile
+                    Edit Profil
                   </Button>
                 ) : (
                   <Button
@@ -163,7 +165,7 @@ function ProfilePageClient({
                     disabled={isUpdatingFollow}
                     variant={isFollowing ? "outline" : "default"}
                   >
-                    {isFollowing ? "Unfollow" : "Follow"}
+                    {isFollowing ? "Batal ikuti" : "Ikuti"}
                   </Button>
                 )}
 
@@ -210,7 +212,7 @@ function ProfilePageClient({
                data-[state=active]:bg-transparent px-6 font-semibold"
             >
               <FileTextIcon className="size-4" />
-              Posts
+              Postingan
             </TabsTrigger>
             <TabsTrigger
               value="likes"
@@ -218,7 +220,7 @@ function ProfilePageClient({
                data-[state=active]:bg-transparent px-6 font-semibold"
             >
               <HeartIcon className="size-4" />
-              Likes
+              Suka
             </TabsTrigger>
           </TabsList>
 
@@ -230,7 +232,7 @@ function ProfilePageClient({
                 ))
               ) : (
                 <div className="text-center py-8 text-muted-foreground">
-                  No posts yet
+                  Belum ada postingan
                 </div>
               )}
             </div>
@@ -244,7 +246,7 @@ function ProfilePageClient({
                 ))
               ) : (
                 <div className="text-center py-8 text-muted-foreground">
-                  No liked posts to show
+                  Tidak ada postingan yang disukai untuk ditampilkan.
                 </div>
               )}
             </div>
@@ -254,18 +256,18 @@ function ProfilePageClient({
         <Dialog open={showEditDialog} onOpenChange={setShowEditDialog}>
           <DialogContent className="sm:max-w-[500px]">
             <DialogHeader>
-              <DialogTitle>Edit Profile</DialogTitle>
+              <DialogTitle>Edit Profil</DialogTitle>
             </DialogHeader>
             <div className="space-y-4 py-4">
               <div className="space-y-2">
-                <Label>Name</Label>
+                <Label>Nama</Label>
                 <Input
                   name="name"
                   value={editForm.name}
                   onChange={(e) =>
                     setEditForm({ ...editForm, name: e.target.value })
                   }
-                  placeholder="Your name"
+                  placeholder=""
                 />
               </div>
               <div className="space-y-2">
@@ -277,37 +279,37 @@ function ProfilePageClient({
                     setEditForm({ ...editForm, bio: e.target.value })
                   }
                   className="min-h-[100px]"
-                  placeholder="Tell us about yourself"
+                  placeholder=""
                 />
               </div>
               <div className="space-y-2">
-                <Label>Location</Label>
+                <Label>Lokasi</Label>
                 <Input
                   name="location"
                   value={editForm.location}
                   onChange={(e) =>
                     setEditForm({ ...editForm, location: e.target.value })
                   }
-                  placeholder="Where are you based?"
+                  placeholder=""
                 />
               </div>
               <div className="space-y-2">
-                <Label>Website</Label>
+                <Label>Situs web</Label>
                 <Input
                   name="website"
                   value={editForm.website}
                   onChange={(e) =>
                     setEditForm({ ...editForm, website: e.target.value })
                   }
-                  placeholder="Your personal website"
+                  placeholder=""
                 />
               </div>
             </div>
             <div className="flex justify-end gap-3">
               <DialogClose asChild>
-                <Button variant="outline">Cancel</Button>
+                <Button variant="outline">Batalkan</Button>
               </DialogClose>
-              <Button onClick={handleEditSubmit}>Save Changes</Button>
+              <Button onClick={handleEditSubmit}>Simpan Perubahan</Button>
             </div>
           </DialogContent>
         </Dialog>

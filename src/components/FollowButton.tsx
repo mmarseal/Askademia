@@ -14,9 +14,9 @@ function FollowButton({ userId }: { userId: string }) {
 
     try {
       await toggleFollow(userId);
-      toast.success("User followed successfully");
+      toast.success("Pengguna berhasil diikuti");
     } catch (error) {
-      toast.error("Error following user");
+      toast.error("Kesalahan saat mengikuti pengguna");
     } finally {
       setIsLoading(false);
     }
@@ -30,7 +30,7 @@ function FollowButton({ userId }: { userId: string }) {
       disabled={isLoading}
       className="w-20"
     >
-      {isLoading ? <Loader2Icon className="size-4 animate-spin" /> : "Follow"}
+      {isLoading ? <Loader2Icon className="size-4 animate-spin" /> : "Ikuti"}
     </Button>
   );
 }

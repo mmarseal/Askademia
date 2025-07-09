@@ -24,8 +24,8 @@ interface DeleteAlertDialogProps {
 export function DeleteAlertDialog({
   isDeleting,
   onDelete,
-  title = "Delete Post",
-  description = "This action cannot be undone.",
+  title = "Hapus Postingan",
+  description = "Tindakan ini tidak dapat dibatalkan.",
 }: DeleteAlertDialogProps) {
   return (
     <AlertDialog>
@@ -48,13 +48,13 @@ export function DeleteAlertDialog({
           <AlertDialogDescription>{description}</AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>Batal</AlertDialogCancel>
           <AlertDialogAction
             onClick={onDelete}
             className="bg-red-500 hover:bg-red-600"
             disabled={isDeleting}
           >
-            {isDeleting ? "Deleting..." : "Delete"}
+            {isDeleting ? "Deleting..." : "Hapus"}
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

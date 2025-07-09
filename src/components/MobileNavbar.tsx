@@ -58,7 +58,7 @@ function MobileNavbar() {
             >
               <Link href="/">
                 <HomeIcon className="w-4 h-4" />
-                Home
+                Beranda
               </Link>
             </Button>
 
@@ -71,7 +71,7 @@ function MobileNavbar() {
                 >
                   <Link href="/notifications">
                     <BellIcon className="w-4 h-4" />
-                    Notifications
+                    Notifikasi
                   </Link>
                 </Button>
                 <Button
@@ -81,7 +81,7 @@ function MobileNavbar() {
                 >
                   <Link href="/profile">
                     <UserIcon className="w-4 h-4" />
-                    Profile
+                    Profil
                   </Link>
                 </Button>
                 <SignOutButton>
@@ -90,14 +90,14 @@ function MobileNavbar() {
                     className="flex items-center gap-3 justify-start w-full"
                   >
                     <LogOutIcon className="w-4 h-4" />
-                    Logout
+                    Keluar
                   </Button>
                 </SignOutButton>
               </>
             ) : (
               <SignInButton mode="modal">
                 <Button variant="default" className="w-full">
-                  Sign In
+                  Masuk
                 </Button>
               </SignInButton>
             )}

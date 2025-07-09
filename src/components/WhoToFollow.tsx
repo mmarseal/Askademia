@@ -12,7 +12,7 @@ async function WhoToFollow() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Who to Follow</CardTitle>
+        <CardTitle>Saran Teman</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
@@ -36,7 +36,7 @@ async function WhoToFollow() {
                   </Link>
                   <p className="text-muted-foreground">@{user.username}</p>
                   <p className="text-muted-foreground">
-                    {user._count.followers} followers
+                    {user._count.followers} Pengikut
                   </p>
                 </div>
               </div>

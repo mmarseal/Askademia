@@ -61,9 +61,9 @@ function NotificationsPage() {
       <Card>
         <CardHeader className="border-b">
           <div className="flex items-center justify-between">
-            <CardTitle>Notifications</CardTitle>
+            <CardTitle>Notifikasi</CardTitle>
             <span className="text-sm text-muted-foreground">
-              {notifications.filter((n) => !n.read).length} unread
+              {notifications.filter((n) => !n.read).length} belum dibaca
             </span>
           </div>
         </CardHeader>
@@ -71,7 +71,7 @@ function NotificationsPage() {
           <ScrollArea className="h-[calc(100vh-12rem)]">
             {notifications.length === 0 ? (
               <div className="p-4 text-center text-muted-foreground">
-                No notifications yet
+                Belum ada notifikasi
               </div>
             ) : (
               notifications.map((notification) => (
