@@ -1,6 +1,6 @@
 # Askademia
 
-A modern academic question-and-answer platform built with  **Next.js 14**, **Clerk**, **ShadCN UI**, **Prisma**, and **UploadThing** , designed to connect students, educators, and researchers in a collaborative learning environment.
+A modern academic question-and-answer platform built with  **Next.js 14**, **Clerk**, **ShadCN UI**, **Prisma**, and **UploadThing**, designed to connect students, educators, and researchers in a collaborative learning environment.
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-blue?logo=nextdotjs)
 ![Clerk](https://img.shields.io/badge/Auth-Clerk-blueviolet?logo=clerk)
