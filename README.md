@@ -1,10 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Askademia
 
-## Getting Started
+A modern academic question-and-answer platform built with  **Next.js 14**, **Clerk**, **ShadCN UI**, **Prisma**, and **UploadThing** , designed to connect students, educators, and researchers in a collaborative learning environment.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-14-blue?logo=nextdotjs)
+![Clerk](https://img.shields.io/badge/Auth-Clerk-blueviolet?logo=clerk)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-06b6d4?logo=tailwindcss)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2d3748?logo=prisma)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript)
 
-```bash
+---
+
+## ✨ Features
+
+- 🔐 **Authentication** with Clerk (Sign in / Sign up / Middleware Protected Routes)
+- 🎨 **Modern UI** with ShadCN, TailwindCSS & Lucide Icons
+- 🧠 **Type-safe database access** using Prisma ORM
+- ☁️ **File uploads** via UploadThing
+- 🌙 **Dark/Light mode toggle** with `next-themes`
+- ⚡ App Router + Server Actions + `use client` components
+
+---
+
+## 🧩 Tech Stack
+
+| Layer           | Tech                        |
+|-----------------|-----------------------------|
+| Frontend        | Next.js 14 (App Router)     |
+| Styling         | Tailwind CSS, ShadCN UI     |
+| Auth            | Clerk                        |
+| ORM / Database  | Prisma + PostgreSQL         |
+| File Upload     | UploadThing                 |
+| Icons           | Lucide React                |
+| Language        | TypeScript                  |
+
+---
+
+## Installation
+1. Clone the repository
+git clone https://github.com/mmarseal/Askademia.git
+cd Askademia
+
+2. Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+
+3. Setup your .env file with:
+# - CLERK keys
+# - DATABASE_URL
+# - UPLOADTHING_TOKEN
+
+npx prisma generate
+npm run dev
+
+4. Run the development server:
 npm run dev
 # or
 yarn dev
@@ -12,25 +65,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open http://localhost:3000 in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
