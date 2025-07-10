@@ -10,6 +10,8 @@ A modern academic question-and-answer platform built with  **Next.js 14**, **Cle
 
 ![Status](https://img.shields.io/badge/project-live-brightgreen)  
 🔗 **Live Demo:** [https://askademia-chi.vercel.app](https://askademia-chi.vercel.app)
+📸 Screenshots
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/7332c226-a5e7-4ada-af0f-61742a58a30f" />
 ---
 
 ## ✨ Features
@@ -70,6 +72,5 @@ bun dev
 
 5. Open http://localhost:3000 in your browser
 
-📸 Screenshots
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/7332c226-a5e7-4ada-af0f-61742a58a30f" />
+
 
