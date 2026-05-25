@@ -12,7 +12,8 @@ A modern academic question-and-answer platform built with  **Next.js 14**, **Cle
 🔗 **Live Demo:** [https://askademia-chi.vercel.app](https://askademia-chi.vercel.app)
 ---
 📸 Screenshots
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/7332c226-a5e7-4ada-af0f-61742a58a30f" />
+<img width="1693" height="929" alt="ChatGPT Image 25 Mei 2026, 21 22 21" src="https://github.com/user-attachments/assets/ac8b3c80-5a3f-457d-b87c-fb3f2f1fef4e" />
+
 
 ## ✨ Features
 
